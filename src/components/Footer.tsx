@@ -1,4 +1,6 @@
-import { GraduationCap, Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+
+const schoolLogo = "https://res.cloudinary.com/dncupgwgb/image/upload/v1767291255/WhatsApp_Image_2025-11-11_at_1.33.35_PM_b5fm1n.jpg";
 
 const footerLinks = {
   quickLinks: [
@@ -29,11 +31,14 @@ const Footer = () => {
     <footer id="contact" className="bg-primary pt-20 pb-8">
       <div className="container px-4 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Brand */}
           <div className="lg:col-span-1">
             <a href="#home" className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-secondary rounded-lg">
-                <GraduationCap className="h-6 w-6 text-secondary-foreground" />
+              <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md">
+                <img 
+                  src={schoolLogo} 
+                  alt="Wisdom Convent School Logo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             <span className="font-display text-xl font-bold text-primary-foreground">
                 Wisdom Convent School

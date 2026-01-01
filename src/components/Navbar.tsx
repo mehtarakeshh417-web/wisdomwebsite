@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const schoolLogo = "https://res.cloudinary.com/dncupgwgb/image/upload/v1767291255/WhatsApp_Image_2025-11-11_at_1.33.35_PM_b5fm1n.jpg";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -34,8 +36,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className={`p-2 rounded-lg transition-all duration-300 ${scrolled ? 'bg-primary' : 'bg-secondary'}`}>
-              <GraduationCap className={`h-6 w-6 transition-colors ${scrolled ? 'text-primary-foreground' : 'text-secondary-foreground'}`} />
+            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-secondary shadow-md">
+              <img 
+                src={schoolLogo} 
+                alt="Wisdom Convent School Logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className={`font-display text-xl font-bold transition-colors ${scrolled ? 'text-foreground' : 'text-cream'}`}>
               Wisdom Convent School
