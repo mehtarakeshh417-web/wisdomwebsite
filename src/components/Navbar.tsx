@@ -38,7 +38,7 @@ const Navbar = () => {
               <GraduationCap className={`h-6 w-6 transition-colors ${scrolled ? 'text-primary-foreground' : 'text-secondary-foreground'}`} />
             </div>
             <span className={`font-display text-xl font-bold transition-colors ${scrolled ? 'text-foreground' : 'text-cream'}`}>
-              Prestige Academy
+              Wisdom Convent School
             </span>
           </a>
 

@@ -35,8 +35,8 @@ const Footer = () => {
               <div className="p-2 bg-secondary rounded-lg">
                 <GraduationCap className="h-6 w-6 text-secondary-foreground" />
               </div>
-              <span className="font-display text-xl font-bold text-primary-foreground">
-                Prestige Academy
+            <span className="font-display text-xl font-bold text-primary-foreground">
+                Wisdom Convent School
               </span>
             </a>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">
@@ -135,7 +135,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              © 2026 Prestige Academy. All rights reserved.
+              © 2026 Wisdom Convent School. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a

@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroCampus}
-          alt="Prestige Academy Campus"
+          alt="Wisdom Convent School Campus"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/50" />
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
           {/* Subheading */}
           <p className="text-cream/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl animate-fade-in-up animation-delay-200">
-            At Prestige Academy, we nurture curiosity, inspire excellence, and
+            At Wisdom Convent School, we nurture curiosity, inspire excellence, and
             empower students to achieve their fullest potential in a world of
             endless possibilities.
           </p>
