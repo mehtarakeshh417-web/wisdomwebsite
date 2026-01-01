@@ -5,7 +5,7 @@ const testimonials = [
     name: "Sarah Mitchell",
     role: "Parent",
     content:
-      "Prestige Academy has transformed our daughter's approach to learning. The teachers truly care about each student's success and well-being.",
+      "Wisdom Convent School has transformed our daughter's approach to learning. The teachers truly care about each student's success and well-being.",
     rating: 5,
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     name: "Dr. Emily Rodriguez",
     role: "Parent & Community Leader",
     content:
-      "The holistic approach to education sets Prestige apart. My son has grown not just academically, but as a compassionate and responsible individual.",
+      "The holistic approach to education sets Wisdom Convent apart. My son has grown not just academically, but as a compassionate and responsible individual.",
     rating: 5,
   },
 ];
