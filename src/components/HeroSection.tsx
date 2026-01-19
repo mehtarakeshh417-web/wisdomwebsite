@@ -1,6 +1,6 @@
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroCampus from "@/assets/hero-campus.jpg";
+const heroCampus = "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800433/IMG-20260109-WA0005_mwt2vd.jpg";
 
 const HeroSection = () => {
   return (
