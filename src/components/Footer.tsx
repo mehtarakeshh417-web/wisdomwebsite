@@ -11,12 +11,6 @@ const footerLinks = {
     { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact" },
   ],
-  resources: [
-    { name: "Student Portal", href: "#" },
-    { name: "Parent Login", href: "#" },
-    { name: "Academic Calendar", href: "#" },
-    { name: "News & Events", href: "#" },
-  ],
 };
 
 const socialLinks = [
@@ -81,24 +75,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="font-display text-lg font-semibold text-primary-foreground mb-6">
-              Resources
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-primary-foreground/70 hover:text-secondary transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           {/* Contact */}
           <div>
@@ -117,13 +93,13 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-secondary flex-shrink-0" />
                 <span className="text-primary-foreground/70">
-                  +91 XXXXX XXXXX
+                  +91 97388 97389
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-secondary flex-shrink-0" />
                 <span className="text-primary-foreground/70">
-                  info@wisdomconventschool.com
+                  info@wisdomconventfazilka.com
                 </span>
               </li>
             </ul>

@@ -6,7 +6,13 @@ import { X } from "lucide-react";
 const galleryImages = [
   "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224711/IMG_3005.JPG_j3wvse.jpg",
   "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224712/IMG_5570.JPG_mnhblo.jpg",
-  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224710/IMG_5086.JPG_kw3rmm.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224710/IMG_5086.JPG_kw3ns4.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224710/IMG_2996.JPG_yikiis.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224706/IMG_3087.JPG_uqyqn3.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224704/IMG_5544.JPG_mzi8mn.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224697/IMG_5554.JPG_bw2rmm.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224696/IMG_5528.JPG_kslqyy.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224695/IMG_5543.JPG_dfppnz.jpg",
 ];
 
 const GalleryPage = () => {
