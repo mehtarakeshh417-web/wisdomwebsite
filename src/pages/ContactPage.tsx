@@ -84,12 +84,17 @@ const ContactPage = () => {
                 </div>
 
                 {/* Map Placeholder */}
-                <div className="rounded-2xl overflow-hidden border border-border/50 bg-muted aspect-video flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <MapPin className="h-12 w-12 mx-auto mb-3 text-secondary/50" />
-                    <p className="font-medium">Map will be displayed here</p>
-                    <p className="text-sm">Fazilka, Punjab, India</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border/50 aspect-video">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3000!2d74.5641!3d30.4045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Wisdom Convent School Location"
+                  />
                 </div>
               </div>
 
