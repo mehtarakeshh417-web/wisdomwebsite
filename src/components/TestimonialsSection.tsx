@@ -43,8 +43,8 @@ const TestimonialsSection = () => {
             What Our <span className="text-secondary">Community</span> Says
           </h2>
           <p className="text-primary-foreground/70 text-lg animate-fade-in-up animation-delay-100">
-            Hear from parents, students, and alumni about their Prestige
-            Academy experience.
+            Hear from parents, students, and alumni about their Wisdom
+            Convent School experience.
           </p>
         </div>
 

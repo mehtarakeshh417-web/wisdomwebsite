@@ -1,5 +1,7 @@
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+
 const heroCampus = "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800433/IMG-20260109-WA0005_mwt2vd.jpg";
 
 const HeroSection = () => {
@@ -31,7 +33,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cream/10 backdrop-blur-sm rounded-full border border-cream/20 mb-8 animate-fade-in">
             <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
             <span className="text-cream text-sm font-medium">
-              Admissions Open for 2026
+              Admissions Open for 2026-27
             </span>
           </div>
 
@@ -50,10 +52,12 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-300">
-            <Button variant="hero" size="xl" className="group">
-              Start Your Journey
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <Link to="/contact">
+              <Button variant="hero" size="xl" className="group">
+                Start Your Journey
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
             <Button variant="heroOutline" size="xl" className="group">
               <Play className="h-5 w-5" />
               Watch Our Story
@@ -63,9 +67,9 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-cream/20 animate-fade-in-up animation-delay-400">
             {[
-              { value: "50+", label: "Years of Excellence" },
-              { value: "2500+", label: "Students Enrolled" },
-              { value: "98%", label: "College Acceptance" },
+              { value: "7+", label: "Years of Excellence" },
+              { value: "1000+", label: "Students Enrolled" },
+              { value: "100%", label: "Results" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-bold text-secondary mb-1">
