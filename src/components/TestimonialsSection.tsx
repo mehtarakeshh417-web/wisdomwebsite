@@ -2,21 +2,21 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
+    name: "Harpreet Kaur",
     role: "Parent",
     content:
       "Wisdom Convent School has transformed our daughter's approach to learning. The teachers truly care about each student's success and well-being.",
     rating: 5,
   },
   {
-    name: "James Chen",
-    role: "Alumni, Class of 2020",
+    name: "Gurpreet Singh",
+    role: "Alumni, Class of 2023",
     content:
       "The foundation I received here prepared me exceptionally well for university. The critical thinking skills and work ethic I developed have been invaluable.",
     rating: 5,
   },
   {
-    name: "Dr. Emily Rodriguez",
+    name: "Mandeep Kaur Sidhu",
     role: "Parent & Community Leader",
     content:
       "The holistic approach to education sets Wisdom Convent apart. My son has grown not just academically, but as a compassionate and responsible individual.",
