@@ -1,23 +1,50 @@
+import { useEffect, useState } from "react";
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import slide1 from "@/assets/hero-slide-1.jpg.asset.json";
 
-const heroCampus = "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800433/IMG-20260109-WA0005_mwt2vd.jpg";
+const slides = [
+  slide1.url,
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800433/IMG-20260109-WA0005_mwt2vd.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224711/IMG_3005.JPG_j3wvse.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224712/IMG_5570.JPG_mnhblo.jpg",
+  "https://res.cloudinary.com/dnqht9dkd/image/upload/v1771224710/IMG_5086.JPG_kw3ns4.jpg",
+];
 
 const HeroSection = () => {
+  const [active, setActive] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setActive((i) => (i + 1) % slides.length), 5000);
+    return () => clearInterval(t);
+  }, []);
+
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
+      {/* Background Slider */}
       <div className="absolute inset-0">
-        <img
-          src={heroCampus}
-          alt="Wisdom Convent School Campus"
-          className="w-full h-full object-cover"
-        />
+        {slides.map((src, i) => (
+          <img
+            key={src}
+            src={src}
+            alt="Wisdom Convent School"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
+          />
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/50" />
+      </div>
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            aria-label={`Show slide ${i + 1}`}
+            onClick={() => setActive(i)}
+            className={`h-2 rounded-full transition-all ${i === active ? "w-6 bg-secondary" : "w-2 bg-cream/50"}`}
+          />
+        ))}
       </div>
 
       {/* Animated shapes */}
