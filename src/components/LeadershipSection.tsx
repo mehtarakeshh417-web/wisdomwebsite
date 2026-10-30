@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import principalPhoto from "@/assets/principal-deepika.jpg.asset.json";
 
 const leaders = [
   {
-    name: "Nimrta Sandhu",
+    name: "Ms. Deepika Chopra",
     title: "Principal",
-    image: "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800480/WhatsApp_Image_2025-11-11_at_1.33.36_PM_weeaud.jpg",
+    qualification: "M.A. & B.Ed. (English)",
+    image: principalPhoto.url,
     intro: "Principal's Message",
     message: `At Wisdom Convent School, we stand at the confluence of tradition and innovation, where the pursuit of excellence is not merely a goal but a continuous journey. As an institution committed to shaping the leaders of tomorrow, we strive to provide an environment that transcends conventional learning, nurturing the intellectual, emotional, and ethical growth of every student. Our vision is to foster a culture where curiosity meets discipline, creativity is nurtured, and every individual is encouraged to explore their limitless potential.
 
@@ -24,6 +26,7 @@ Join us at Wisdom Convent School, where every student's journey is a unique and 
   {
     name: "Mr. Paramjeet Singh Warar",
     title: "Managing Director",
+    qualification: "",
     image: "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800562/WhatsApp_Image_2025-11-11_at_1.33.35_PM_1_ountr0.jpg",
     intro: "Our Managing Director's Message",
     message: `At Wisdom Convent School, our mission is to cultivate an ecosystem where knowledge, virtue, and innovation coexist harmoniously. We aspire to nurture young minds into intellectually vibrant, emotionally balanced, and socially responsible individuals who can illuminate the world with their wisdom and compassion.
@@ -38,6 +41,7 @@ Our mission is to shape a generation of visionaries who will not only excel in t
   {
     name: "Mr. Kavinder Nath Dahuja",
     title: "Chairman",
+    qualification: "",
     image: "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800932/WhatsApp_Image_2026-01-19_at_11.04.16_AM_qayhyh.jpg",
     intro: "Guiding words from our Chairman",
     message: `It fills my heart with immense pride and satisfaction to see Wisdom Convent School flourish as a centre of academic excellence and holistic development. Over the years, the school has grown not only in strength and infrastructure but also in spirit, ideals, and achievements.
@@ -74,6 +78,9 @@ const LeaderCard = ({ leader, index }: { leader: typeof leaders[0]; index: numbe
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-6">
               <h3 className="font-display text-xl font-bold text-cream">{leader.name}</h3>
               <p className="text-secondary font-medium">{leader.title}</p>
+              {leader.qualification && (
+                <p className="text-cream/75 text-xs mt-1 font-medium tracking-wide">{leader.qualification}</p>
+              )}
             </div>
           </div>
         </div>
@@ -87,6 +94,9 @@ const LeaderCard = ({ leader, index }: { leader: typeof leaders[0]; index: numbe
             <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">
               {leader.intro}
             </h3>
+            {leader.qualification && (
+              <p className="text-sm font-semibold text-secondary tracking-wide">{leader.qualification}</p>
+            )}
             <div className="w-16 h-1 bg-secondary rounded-full mb-6" />
             
             <div className="text-muted-foreground leading-relaxed space-y-4">
