@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import principalPhoto from "@/assets/principal-deepika.jpg.asset.json";
 
 const leaders = [
   {
-    name: "Nimrta Sandhu",
+    name: "Ms. Deepika Chopra",
     title: "Principal",
-    image: "https://res.cloudinary.com/dnqht9dkd/image/upload/v1768800480/WhatsApp_Image_2025-11-11_at_1.33.36_PM_weeaud.jpg",
+    qualification: "M.A. & B.Ed. (English)",
+    image: principalPhoto.url,
     intro: "Principal's Message",
     message: `At Wisdom Convent School, we stand at the confluence of tradition and innovation, where the pursuit of excellence is not merely a goal but a continuous journey. As an institution committed to shaping the leaders of tomorrow, we strive to provide an environment that transcends conventional learning, nurturing the intellectual, emotional, and ethical growth of every student. Our vision is to foster a culture where curiosity meets discipline, creativity is nurtured, and every individual is encouraged to explore their limitless potential.
 
